@@ -1,0 +1,160 @@
+:root {
+  --bg: #f3f5f8;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --accent: #1d4ed8;
+  --accent-soft: #dbeafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
+}
+
+.hero-page,
+.places-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.hero-card,
+.places-header,
+.slide-card {
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+.hero-card {
+  width: min(760px, 100%);
+  padding: 34px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 14px 0;
+  line-height: 1.2;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.authors {
+  margin-top: 24px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.authors h2 {
+  margin: 0 0 10px;
+}
+
+.authors ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.primary-btn,
+.back-link {
+  display: inline-block;
+  margin-top: 22px;
+  text-decoration: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.places-page {
+  align-content: start;
+  gap: 20px;
+}
+
+.places-header {
+  width: min(980px, 100%);
+  padding: 22px;
+}
+
+.places-header .back-link {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.slider {
+  width: min(980px, 100%);
+  display: grid;
+  grid-template-columns: 52px 1fr 52px;
+  gap: 14px;
+  align-items: center;
+}
+
+.slider-btn {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.slide-card {
+  overflow: hidden;
+}
+
+.slide-card img {
+  width: 100%;
+  aspect-ratio: 16/8;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-content {
+  padding: 18px 20px 24px;
+}
+
+.slide-index {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.slide-location {
+  margin-top: -4px;
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .slider {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-btn {
+    justify-self: center;
+  }
+}
