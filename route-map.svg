@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Карта-схема маршрута</title>
+  <desc id="desc">Схема маршрута Дубно — Княжеводцы — Черлёна — Лунно — Шимки — Дубно</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2f6fad" />
+    </marker>
+    <style>
+      .bg{fill:#eef5ea}.river{stroke:#86b8e7;stroke-width:8;fill:none;stroke-linecap:round}
+      .road{stroke:#2f6fad;stroke-width:6;fill:none;marker-end:url(#arrow)}
+      .node{fill:#c01818;stroke:#7e0d0d;stroke-width:2}.label{font: 700 24px 'Segoe UI', sans-serif;fill:#1f2937}
+      .sub{font: 500 17px 'Segoe UI', sans-serif;fill:#374151}
+      .title{font: 700 42px 'Georgia', serif;fill:#111827}
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="520" rx="18" />
+  <text class="title" x="600" y="58" text-anchor="middle">Карта-схема маршрута</text>
+
+  <path class="river" d="M70 245 C250 190, 400 270, 560 250 C760 228, 860 160, 1130 190" />
+
+  <path class="road" d="M170 300 L240 260" />
+  <path class="road" d="M240 260 L420 210" />
+  <path class="road" d="M420 210 L690 200" />
+  <path class="road" d="M690 200 L980 180" />
+  <path class="road" d="M980 180 L1040 140" />
+  <path class="road" d="M1040 160 L760 265" />
+  <path class="road" d="M760 265 L500 290" />
+  <path class="road" d="M500 290 L290 270" />
+
+  <circle class="node" cx="240" cy="260" r="14" />
+  <text class="label" x="253" y="246">Дубно</text>
+
+  <circle class="node" cx="170" cy="300" r="14" />
+  <text class="label" x="63" y="333">Княжеводцы</text>
+
+  <circle class="node" cx="120" cy="275" r="14" />
+  <text class="label" x="33" y="262">Черлёна</text>
+
+  <circle class="node" cx="95" cy="210" r="14" />
+  <text class="label" x="74" y="198">Лунно</text>
+
+  <circle class="node" cx="1040" cy="140" r="14" />
+  <text class="label" x="1005" y="125">Шимки</text>
+
+  <text class="sub" x="600" y="480" text-anchor="middle">Маршрут: Дубно → Княжеводцы → Черлёна → Лунно → Шимки → Дубно</text>
+</svg>

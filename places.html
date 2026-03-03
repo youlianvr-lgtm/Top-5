@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДА суседзяу́ — 5 достопримечательностей</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="places-page">
+      <header class="places-header">
+        <a class="back-link" href="index.html">← На главную</a>
+        <h1>5 достопримечательностей маршрута «Маршруты памяти»</h1>
+        <p>
+          Спокойный обзор памятных мест Мостовского района. Листайте карточки
+          кнопками вправо/влево.
+        </p>
+      </header>
+
+      <section class="slider" aria-label="Слайдер достопримечательностей">
+        <button class="slider-btn" id="prevBtn" aria-label="Предыдущая карточка">←</button>
+
+        <article class="slide-card" id="slideCard">
+          <img id="slideImage" src="" alt="" loading="eager" />
+          <div class="slide-content">
+            <p class="slide-index" id="slideIndex"></p>
+            <h2 id="slideTitle"></h2>
+            <p class="slide-location" id="slideLocation"></p>
+            <p id="slideText"></p>
+            <button class="details-btn" id="toggleDetailsBtn" type="button" aria-expanded="false">
+              Подробнее
+            </button>
+
+            <section class="details-panel" id="detailsPanel" hidden>
+              <h3>Подробная информация</h3>
+              <div id="slideDetails"></div>
+            </section>
+          </div>
+        </article>
+
+        <button class="slider-btn" id="nextBtn" aria-label="Следующая карточка">→</button>
+      </section>
+    </main>
+
+    <script src="slider.js"></script>
+  </body>
+</html>
